@@ -1,4 +1,6 @@
 # My-Personal-Website
-creativity
+
+creativity,  empathetic, problem solving, 
 hi
+
 
