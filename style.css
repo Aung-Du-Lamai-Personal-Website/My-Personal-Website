@@ -3,11 +3,53 @@ padding: 0;
 box-sizing: border-box;
 font-family: Georgia, 'Times New Roman', Times, serif;}
 
-body{background-color: rgba(108, 146, 134, 0.907);}
+body{background-color: rgba(108, 146, 134, 0.907);
+}
 
 .header {position: fixed;top: 0;width: 100%;left: 0;
 padding: 20px 10%;
 background: rgba(59, 99, 87, 0.915);
 display: flex;
 justify-content: space-between;
-align-items: center;}
+align-items: center;
+z-index: 100;
+}
+
+.logo {font-size: 40px;
+color: rgb(27, 16, 57);font-weight: 850;
+text-decoration: none;
+margin-left: 4%;}
+
+.home{display: flex;
+align-items: center ;
+height: 25vh;
+;
+margin-left: 2%; letter-spacing: 1px;
+}
+
+.home-content{background: rgba(83, 62, 105, 0.207);
+ padding: 20px
+}
+.home-content h1 {font-size: 45px; line-height: 1.6;
+}
+
+.home-content h3 {color: rgb(99, 62, 40);height: 3vh; 
+line-height: 1.2; font-size: 24px;}
+
+.home-content p{font-size: 21px;}
+.navbar a {font-size: 30px;
+color: rgba(7, 11, 11, 0.605);
+font-weight: 600;
+text-decoration: none; 
+margin-left: 35px;
+transition: .3s;
+}
+
+.navbar a:hover {color: aquamarine;}
+
+.profile {display: flex;
+height: 43vh;
+width: 100%;
+margin-top: 8%;
+margin-left: 2%;}
+
