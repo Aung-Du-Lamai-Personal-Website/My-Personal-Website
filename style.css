@@ -10,46 +10,138 @@ body{background-color: rgba(108, 146, 134, 0.907);
 padding: 20px 10%;
 background: rgba(59, 99, 87, 0.915);
 display: flex;
-justify-content: space-between;
+justify-content:space-between;
 align-items: center;
+position: relative;
 z-index: 100;
+
 }
 
-.logo {font-size: 40px;
+.logo {font-size: 50px;
 color: rgb(27, 16, 57);font-weight: 850;
 text-decoration: none;
-margin-left: 4%;}
-
-.home{display: flex;
-align-items: center ;
-height: 25vh;
-;
-margin-left: 2%; letter-spacing: 1px;
+margin-left: 4%;
+transition: .4s;
+position: relative;
 }
 
-.home-content{background: rgba(83, 62, 105, 0.207);
- padding: 20px
+.header a:hover {color: rgba(145, 218, 19, 0.85);}
+/* ----------------Home Page Styling----------------------- */
+.home{
+position: relative;
+align-items: center;
+letter-spacing: 1px;
+top: 15vh;
+left: 46px;
+display: inline-block;
+}
+
+.home-content{background: rgba(75, 52, 99, 0.359);
+    border: 1px;
+  padding-left: 40px;
+  padding-right: 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  
+  
+  
 }
 .home-content h1 {font-size: 45px; line-height: 1.6;
 }
 
-.home-content h3 {color: rgb(99, 62, 40);height: 3vh; 
-line-height: 1.2; font-size: 24px;}
+.home-content h3 {color: rgb(95, 56, 34); 
+     font-size: 25px;
+     line-height: 1.6;
+   }
 
-.home-content p{font-size: 21px;}
-.navbar a {font-size: 30px;
+.home-content p{font-size: 21px;
+    line-height: 1.9;
+}
+
+/* --------------------------------------------------- */
+.navbar a {font-size: 34px;
 color: rgba(7, 11, 11, 0.605);
 font-weight: 600;
 text-decoration: none; 
-margin-left: 35px;
+margin-left: 41px;
 transition: .3s;
 }
-
 .navbar a:hover {color: aquamarine;}
 
-.profile {display: flex;
-height: 43vh;
-width: 100%;
-margin-top: 8%;
-margin-left: 2%;}
+/* ----------------Home Page Styling----------------------- */
+#id {display: block;}
+
+/* ---------My Profile image------- */
+.profile {position:relative;
+top: 11vh;
+left: 5vh;
+border: 1px;
+display: inline-block;
+border-width: 13px;
+border-style: solid;
+border-color: rgba(61, 64, 57, 0.824);
+border-radius: 20px;
+
+
+}
+
+.personality {position: relative;
+bottom: 470px;
+padding-left: 10px;
+}
+
+.personality1 {
+    position: relative;
+    border: 1px solid rgba(79, 119, 11, 0.706);
+    font-size: 40px;
+    bottom: 642px;
+    left: 650px;
+    background: rgba(79, 119, 11, 0.706);
+    padding-right: 100px;
+    border-radius: 10px;
+    display: inline-block;
+   
+}
+.personality2 {
+    position: relative;
+    border: 1px;
+    font-size: 40px;
+    bottom: 532px;
+    left: 650px;
+    background: rgba(79, 119, 11, 0.706);
+    padding-right: 90px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.personality3 {
+    position: relative;
+    border: 1px;
+    font-size: 40px;
+    bottom: 422px;
+    left: 650px;
+    background: rgba(79, 119, 11, 0.706);
+    padding-right: 90px;
+    border-radius: 10px;
+    width: 360px;
+
+   
+}
+
+.quote {position: relative;
+bottom: 700px;
+border: 5px solid black;
+background-color: rgba(239, 234, 234, 0.698);
+left: 1260px;
+width: 550px;
+text-align: justify;
+font-size: 40px;
+padding-left: 22px;
+padding-top: 22px;
+padding-bottom: 22px;
+padding-right: 22px;
+border-radius: 10px;
+
+}
+
 /* ------------------about------- */
