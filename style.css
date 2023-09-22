@@ -183,5 +183,18 @@ line-height: 60px;
 letter-spacing: .5px;
 text-align: left;
 }
-
-
+.portfolio {background-image: url(pexels-johannes-plenio-2957860.jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  ;
+}
+h2 {font-size: 50px;
+border: 1px;
+padding: 400px 400px;
+background-color: rgba(205, 202, 202, 0.33);
+margin-top: 200px;
+margin-left: 200px;
+display: inline-block;
+width: auto;
+border-radius: 25px;}

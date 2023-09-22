@@ -1,2 +1,2 @@
-console.log("HELLO_WORLD")
-
+let x = "Hello world"; 
+console.log(x);
