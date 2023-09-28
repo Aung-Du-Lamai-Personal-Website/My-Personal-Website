@@ -1,3 +1,3 @@
 # My-Personal-Website
 
-creativive, empathetic, problem solving, 
+creativive, empathetic, problem solving,
