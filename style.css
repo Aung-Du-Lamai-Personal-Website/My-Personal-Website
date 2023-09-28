@@ -1,200 +1,228 @@
+/* ----------------Page Layout----------------------- */
+/* ----------------Page Layout----------------------- */
+/* ----------------Page Layout----------------------- */
 * {margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: Georgia, 'Times New Roman', Times, serif;}
 
 body{background-color: rgba(108, 146, 134, 0.907);
+    max-height: 100%;
+    max-width: 100%;
+    margin: 13vh 3vh;
+    /* border: 2px solid; */
+    
 }
-
+/* ----------------Page Layout----------------------- */
+/* ----------------Page Layout----------------------- */
+/* ----------------Page Layout----------------------- */
 .header {position: fixed;top: 0;width: 100%;left: 0;
 padding: 20px 10%;
 background: rgba(59, 99, 87, 0.915);
 display: flex;
 justify-content:space-between;
 align-items: center;
-position: relative;
-z-index: 100;
+z-index: 100;}
 
-}
+.header a:hover {color: rgba(145, 218, 19, 0.85);
+    transform:scale(1.2) ;}
 
-.logo {font-size: 50px;
+.logo {
+    font-size: 50px;
 color: rgb(27, 16, 57);font-weight: 850;
 text-decoration: none;
 margin-left: 4%;
 transition: .4s;
-position: relative;
 }
 
-.header a:hover {color: rgba(145, 218, 19, 0.85);}
-/* ----------------Home Page Styling----------------------- */
-.home{
-position: relative;
-align-items: center;
-letter-spacing: 1px;
-top: 15vh;
-left: 46px;
-display: inline-block;
-}
-
-.home-content{background: rgba(75, 52, 99, 0.359);
-    border: 1px;
-  padding-left: 40px;
-  padding-right: 10px;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  
-  
-  
-}
-.home-content h1 {font-size: 45px; line-height: 1.6;
-}
-
-.home-content h3 {color: rgb(95, 56, 34); 
-     font-size: 25px;
-     line-height: 1.6;
-   }
-
-.home-content p{font-size: 21px;
-    line-height: 1.9;
-}
-
-/* --------------------------------------------------- */
 .navbar a {font-size: 34px;
-color: rgba(7, 11, 11, 0.605);
-font-weight: 600;
-text-decoration: none; 
-margin-left: 41px;
-transition: .3s;
+    color: rgba(7, 11, 11, 0.605);
+    font-weight: 600;
+    text-decoration: none; 
+    margin-left: 41px;
+    transition: .9s;
 }
-.navbar a:hover {color: aquamarine;}
+    
+.navbar nav:hover {color: aquamarine;
+        transform:scale(1.1) ;
+        transition: .1s;}
 
 /* ----------------Home Page Styling----------------------- */
-#id {display: block;}
+
+.hometext {display: flex;
+flex-flow: wrap;
+justify-content: flex-start;
+margin: 100px 0px;
+/* border: 1px solid; */
+height: 500px;
+gap: 2px;
+flex-shrink: 1;
+padding-top: 50px;
+
+}
+
+.main {
+display: flex;
+gap: 20px;
+/* border: 1px solid; */
+margin-left: 65px;
+}
+
+/* .main > * {flex-basis: 100%;} */
+/* ----------------Home Page Styling----------------------- */
 
 /* ---------My Profile image------- */
-.profile {position:relative;
-top: 11vh;
-left: 5vh;
-border: 1px;
-display: inline-block;
-border-width: 13px;
-border-style: solid;
+.profile { width: fit-content;
+border: 15px solid;
+height: 491px;
 border-color: rgba(61, 64, 57, 0.824);
-border-radius: 20px;
+border-radius: 20px;}
 
-
-}
-
-.personality {position: relative;
-bottom: 470px;
-padding-left: 10px;
+.personality { 
+    display:flex;
+    gap: 85px;
+    flex-direction: column;
+    font-size: 35px;
+    /* border: 3px solid; */
+    height: 500px;
+    justify-content: center;
 }
 
 .personality1 {
-    position: relative;
     border: 1px solid rgba(79, 119, 11, 0.706);
-    font-size: 40px;
-    bottom: 642px;
-    left: 650px;
     background: rgba(79, 119, 11, 0.706);
     padding-right: 100px;
     border-radius: 10px;
-    display: inline-block;
+    min-width: 300px;
    
 }
 .personality2 {
-    position: relative;
     border: 1px;
-    font-size: 40px;
-    bottom: 532px;
-    left: 650px;
     background: rgba(79, 119, 11, 0.706);
     padding-right: 90px;
     border-radius: 10px;
-    display: inline-block;
+    width: 300px;
 }
 .personality3 {
-    position: relative;
     border: 1px;
-    font-size: 40px;
-    bottom: 422px;
-    left: 650px;
     background: rgba(79, 119, 11, 0.706);
     padding-right: 90px;
     border-radius: 10px;
-    width: 360px;
-
-   
+    width: 300px;
+     
 }
 
-.quote {position: relative;
-bottom: 700px;
+.quote {
 border: 5px solid black;
 background-color: rgba(239, 234, 234, 0.698);
-left: 1260px;
-width: 550px;
 text-align: justify;
-font-size: 40px;
+font-size: 32px;
 padding-left: 22px;
 padding-top: 22px;
 padding-bottom: 22px;
 padding-right: 22px;
 border-radius: 10px;
-
+max-width: 470px;
+/* flex-basis: 300px; */
+height: auto;
+margin: 55px;
 }
 
-/* ------------------about------- */
-.grid {
-    display: grid;
-    grid-template-columns: 600px 500px;
-    margin-top: 10px; 
-    column-gap: 500px; 
+.home-content{
+    background: rgba(75, 52, 99, 0.359);
+    border: 1px solid;
+      padding-left: 50px;
+      padding-right: 10px;
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      max-width: 720px;
+      margin-top: 41px;
+    }
+    .home-content h1 {font-size: 45px; line-height: 1.6;
+    }
+    
+    .home-content h3 {color: rgb(95, 56, 34); 
+         font-size: 25px;
+         line-height: 1.6;}
+    
+    .home-content p{font-size: 21px;
+        line-height: 1.9;
+    }
+    /* ----------------Home Page Styling----------------------- */
+
+/* About Page Start */
+/* About Page Start */
+/* About Page Start */
+/* About Page Start */
+
+.grid {display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid; */
+    padding-top: 100px;
+    gap: 35px;
+    font-size: 24px;
+    margin: -50px 60px;
+    }
+
+.grid >* {border-radius: 20px;}
+.Title { font-size: 30px;
+background-color: azure;
+text-align: center;
+padding: 50px;
+background-color: rgba(213, 180, 149, 0.553);
+
 }
-
-.me {margin-top: 120px;
-margin-left: 190px;
-}
-
-.me2 {margin-top: 120px;
-    margin-left: 190px;
-
+.Title2 {text-align: center;
+    background-color: rgba(213, 180, 149, 0.553);
+    
   
 }
-.about1 {background-color: rgba(151, 155, 116, 0.742);
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 15px;
-    border-radius: 15px;
-font-size: 35px;
-line-height: 60px; 
-letter-spacing: .5px;
-text-align: left;
+
+
+.about1 {background-color: azure;
+line-height: 45px;
+padding: 25px;
+background-color: rgba(239, 234, 234, 0.698);}
+
+.about2 {background-color: azure;
+    line-height: 45px;
+    padding: 25px;
+    background-color: rgba(239, 234, 234, 0.698);
 }
-.about2 {background-color: rgba(151, 155, 116, 0.742);
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 15px;
-    border-radius: 15px;
-font-size: 35px;
-line-height: 60px; 
-letter-spacing: .5px;
-text-align: left;
+
+.player {aspect-ratio: 16 /9;
+width: 70%;
+border: 8px rgb(59, 71, 81);
+border-radius: 23px;
+margin: 150px 200px;
+
+
+display: block;
 }
-.portfolio {background-image: url(pexels-johannes-plenio-2957860.jpg);
-    background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-  ;
-}
-h2 {font-size: 50px;
+
+
+
+
+/* About Page End */
+/* About Page End */
+/* About Page End */
+/* About Page End */
+
+h2 {
+    font-size: 50px;
+    text-align: center;
 border: 1px;
-padding: 400px 400px;
+padding: 200px 200px;
+margin: 16%;
 background-color: rgba(205, 202, 202, 0.33);
-margin-top: 200px;
-margin-left: 200px;
-display: inline-block;
 width: auto;
+border: 2px solid;
+justify-content: center;
+align-items: center;
 border-radius: 25px;}
+
+#background {background-image: url(pexels-johannes-plenio-2957860.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;}
