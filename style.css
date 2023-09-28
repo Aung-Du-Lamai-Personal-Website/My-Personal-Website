@@ -6,7 +6,8 @@ padding: 0;
 box-sizing: border-box;
 font-family: Georgia, 'Times New Roman', Times, serif;}
 
-body{background-color: rgba(108, 146, 134, 0.907);
+body{
+    background-color: rgba(108, 146, 134, 0.907) !important;
     max-height: 100%;
     max-width: 100%;
     margin: 13vh 3vh;
@@ -130,7 +131,7 @@ margin: 55px;
 
 .home-content{
     background: rgba(75, 52, 99, 0.359);
-    border: 1px solid;
+    /* border: 1px solid; */
       padding-left: 50px;
       padding-right: 10px;
       border-radius: 10px;
@@ -176,7 +177,6 @@ background-color: rgba(213, 180, 149, 0.553);
 .Title2 {text-align: center;
     background-color: rgba(213, 180, 149, 0.553);
     
-  
 }
 
 
@@ -225,4 +225,67 @@ border-radius: 25px;}
 #background {background-image: url(pexels-johannes-plenio-2957860.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-size: 100% 100%;}
+background-position: center;
+background-size: cover;
+/* 
+align-items: center;
+justify-content: center; */
+}
+
+
+/* ------------------------Contact Page Start---------------------- */
+/* ------------------------Contact Page Start---------------------- */
+/* ------------------------Contact Page Start---------------------- */
+/* ------------------------Contact Page Start---------------------- */
+.contact {display: grid;
+    grid-template-rows: 1fr 2fr;
+font-size: larger;
+/* border: 1px solid; */
+gap: 50px;
+margin-top: 20vh;
+justify-content: center;
+
+}
+
+#contact1 {border: 1px solid;
+    background-color:rgba(239, 234, 234, 0.698);
+    font-size: 34px;
+   padding: 50px;
+    border-radius: 20px;
+    max-width: 300px;
+
+margin: auto;
+}
+.Contactme {background-color: rgba(45, 77, 109, 0.754);
+width: 100%;
+font-size: 30px;
+margin: auto;
+padding: 100px;
+border-radius: 20px;
+line-height: 45px;
+color: rgb(233, 237, 227);}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: larger;}
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #143219a4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: larger;}
+
+    input[type=submit]:hover {
+        background-color: #143219;
+    transform: scale(1.02);}
+
