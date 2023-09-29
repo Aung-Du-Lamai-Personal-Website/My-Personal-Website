@@ -215,6 +215,7 @@ h2 {
 border: 1px;
 padding: 200px 200px;
 margin: 16%;
+/* margin: auto; */
 background-color: rgba(205, 202, 202, 0.33);
 width: auto;
 border: 2px solid;
